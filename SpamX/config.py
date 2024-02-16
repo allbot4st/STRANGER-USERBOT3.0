@@ -1,4 +1,4 @@
-"""𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥 𝗦𝗣𝗔𝗠 """
+"""4sᴛ 𝐎ғғɪᴄɪᴀʟ"""
 import os
 import sys
 import re
@@ -46,21 +46,21 @@ CLIENT18 = os.getenv("CLIENT18", None)
 CLIENT19 = os.getenv("CLIENT19", None)
 CLIENT20 = os.getenv("CLIENT20", None)
 auto_re = os.getenv("AUTO_REACT_CHATS", None)
-LOGS_CHANNEL = os.getenv("LOGS_CHANNEL", None)
+LOGS_CHANNEL = os.getenv("LOGS_CHANNEL", "-1002021329009")
 if LOGS_CHANNEL:
    if check_logchannel(LOGS_CHANNEL):
       print("SpamX [INFO]: You Can't Use That Chat As A Log Channel -!")
       print("SpamX [INFO]: Change Logs Channel Id else Bot Could not be start")
       sys.exit()
     
-HNDLR = os.getenv("HNDLR", None)
+HNDLR = os.getenv("HNDLR", ".")
 if not HNDLR:
    HNDLR = "."
 OWNER_ID = int(os.environ.get("OWNER_ID", None))
 if not OWNER_ID:
    print("SpamX [INFO]: You didn't fill OWNER_ID var!")
    sys.exit()
-SUDO_USERS = os.getenv("SUDO_USERS", "6762113050 6919199044")
+SUDO_USERS = os.getenv("SUDO_USERS", "6428719458")
 
 #Optional
 DATABASE_URL = os.getenv("DATABASE_URL", None)
@@ -78,4 +78,3 @@ if WELCOME:
       group_welcome = True
 else:
    group_welcome = True
-
