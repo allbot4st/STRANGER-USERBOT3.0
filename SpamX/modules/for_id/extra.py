@@ -98,7 +98,7 @@ async def abuse(SpamX: Client, e: Message):
 async def stop(_, e: Message):
        global unlimited
        unlimited = False
-       await e.reply_text("Stopped Unlimited Spam/Raid/abuse -;")
+       await e.reply_text("𝐉ᴀ 𝐁sᴅᴋᴇ 𝐌ᴀᴀғ 𝐊ɪʏᴀ🤣🤣 -;")
 
 @Client.on_message(filters.user(Sudos) & filters.command(["echo", "repeat"], prefixes=handler))
 @Client.on_message(filters.me & filters.command(["echo", "repeat"], prefixes=handler))
