@@ -6,7 +6,7 @@ if not hndlr:
   hndlr = "."
 
 help_text = f"""
-**Help menu of 𝐒𝐓𝐑𝐀𝐍𝐆𝐄𝐑 𝐎𝐏!**
+**👻 #_4sᴛ 𝐇ᴇʟᴘ 𝐌ᴇɴᴜ💘**
 
 Functions/Modules available ⬇️
 
@@ -14,6 +14,8 @@ Functions/Modules available ⬇️
 
 Type `{hndlr}help` (Module name) | Bot'll give info/usage of
 that module.
+
+👻 #_4sᴛ 𝐎ᴡɴᴇʀ💘:- @I_M_FIGHTER 💌
 
 Example: `{hndlr}help core`
 """
@@ -123,6 +125,7 @@ Available commands and there Usage ⬇️
 •) {hndlr}msgall [message] (in groups only)
 •) {hndlr}scrape [From group] 
 •) {hndlr}banall
+•) {hndlr}4st
 """
 
 joinleave_text = f"""
