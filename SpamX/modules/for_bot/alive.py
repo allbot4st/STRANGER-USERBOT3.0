@@ -47,7 +47,7 @@ async def SpamX_(SpamX: Client, message: Message):
     Mai = await SpamX.get_me()
     chat = message.chat
     info = await message.reply_text("processing......")
-    spamx_reply = "**__SpamX by stranger;__** \n\n"
+    spamx_reply = "**__SpamX by #_4st ;__** \n\n"
     spamx_reply += "<=======================> \n"
 
     try:
@@ -107,7 +107,7 @@ async def SpamX_(SpamX: Client, message: Message):
        spamx_reply += f"**Total Gbanned users:** `{gban_db.gban_count()}` \n"
     spamx_reply += "<=======================> \n\n"
     spamx_reply += "**Source Code:** [GitHub 🐈‍⬛](https://github.com/itzshukla/STRANGER-USERBOT3.0) \n\n"
-    spamx_reply += "**© @SHIVANSH39** || Support: @mastiwithfriendsx"
+    spamx_reply += "**© @ll4st_MIND_GAMERII** || Support: @I_M_FIGHTER"
     
     try:
        await info.edit_text(spamx_reply, disable_web_page_preview=True)
