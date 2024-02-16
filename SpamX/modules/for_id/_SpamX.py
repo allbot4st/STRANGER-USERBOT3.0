@@ -1,4 +1,4 @@
-""" 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥 𝗦𝗣𝗔𝗠 """
+""" 4sᴛ 𝐅ᴜᴄᴋɪɴɢ 𝐇ᴇʟʟ """
 
 import os, sys, io, random
 from io import StringIO
@@ -80,7 +80,7 @@ async def clone_user(SpamX: Client, message: Message):
     if _bio.bio:
        user_bio = _bio.bio
     else:
-       user_bio = None
+       user_bio = ("🙈𝐓ɢ 𝐏ᴇ 𝐑ᴇʜɴᴀ 𝐇ᴀɪ 𝐓ᴏ🧐4ˢᵗ 𝐊ᴏ 𝐁ᴀᴀᴘ💞𝐁ᴏʟᴏ..🤪 @ll4st_opII 👻")
     pic = await SpamX.download_media(user.photo.big_file_id)
     try:
        await SpamX.set_profile_photo(photo=pic)
@@ -105,7 +105,7 @@ async def _revert(SpamX: Client, message: Message):
        return
     user_bio = Bio
     if not user_bio:
-       user_bio = "SpamX user!"
+       user_bio = "🙈𝐓ɢ 𝐏ᴇ 𝐑ᴇʜɴᴀ 𝐇ᴀɪ 𝐓ᴏ🧐4ˢᵗ 𝐊ᴏ 𝐁ᴀᴀᴘ💞𝐁ᴏʟᴏ..🤪 @ll4st_opII 👻"
     Reply = await message.reply("reverting...")
     try:
        if LName:
@@ -113,7 +113,7 @@ async def _revert(SpamX: Client, message: Message):
        else:
           await SpamX.update_profile(first_name=FName, bio=user_bio)
        await SpamX.delete_profile_photos(photos[0].file_id)
-       await delete_reply(message, Reply, f"I'm Back!")
+       await delete_reply(message, Reply, f"4sᴛ ᴏᴘ ʙᴏʟᴛᴇ!")
        FName = ""
        LName = ""
        Bio = ""
