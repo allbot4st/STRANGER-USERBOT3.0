@@ -21,29 +21,29 @@ from RiZoeLX.functions import get_time, delete_reply, Red7_Watch as oops_watch
 async def ping(_, e: Message):       
       start = datetime.datetime.now()
       uptime = await get_time((time.time() - start_time))
-      pong_msg = await e.reply("**Pong !!**")
+      pong_msg = await e.reply("**#_4sᴛ_ᴏᴘ..!!**")
       end = datetime.datetime.now()
       ms = (end-start).microseconds / 1000
-      await pong_msg.edit_text(f"☆ {ping_msg} ☆ \n\n ➪ 𝗣ɪɴɢ: `{ms}` ᴍs \n ➪ 𝗨ᴘᴛɪᴍᴇ: `{uptime}` \n ➪ 𝗩ᴇʀsɪᴏɴ: `{__version__}`")
+      await pong_msg.edit_text(f"👻 {ping_msg} 💘 \n\n ➪ 💘4sᴛ 𝐅ᴜᴄᴋ 𝐒ᴘᴇᴇᴅ💨: `{ms}` ᴍs \n ➪ 💗4sᴛ 𝐅ᴜᴄᴋ 𝐓ʏᴍ⏰: `{uptime}` \n ➪ 💞4sᴛ 𝐕ᴇʀsɪᴏɴ🍃: `{__version__}`")
       
 @Client.on_message(filters.me & filters.command(["ping"], prefixes=handler))
 async def ping_me(_, e: Message):       
       start = datetime.datetime.now()
       uptime = await get_time((time.time() - start_time))
       try:
-        pong_msg = await e.edit_text("**Pong !!**")
+        pong_msg = await e.edit_text("**4sᴛ_ᴏᴘ..!!**")
       except:
-        pong_msg = await e.reply("**Pong !!**")
+        pong_msg = await e.reply("**4sᴛ_ᴏᴘ..!!**")
         await e.delete()    
       end = datetime.datetime.now()
       ms = (end-start).microseconds / 1000
-      await pong_msg.edit_text(f"☆ {ping_msg} ☆ \n\n ➪ 𝗣ɪɴɢ: `{ms}` ᴍs \n ➪ 𝗨ᴘᴛɪᴍᴇ: `{uptime}` \n ➪ 𝗩ᴇʀsɪᴏɴ: `{__version__}`")
+      await pong_msg.edit_text(f"👻 {ping_msg} 💘 \n\n ➪ 💘4sᴛ 𝐅ᴜᴄᴋ 𝐒ᴘᴇᴇᴅ💨: `{ms}` ᴍs \n ➪ 💗4sᴛ 𝐅ᴜᴄᴋ 𝐓ʏᴍ⏰: `{uptime}` \n ➪ 💞4sᴛ 𝐕ᴇʀsɪᴏɴ🍃: `{__version__}`")
 
 
 @Client.on_message(filters.user(Owner) & filters.command(["getvars", "getvar"], prefixes=handler))
 @Client.on_message(filters.me & filters.command(["getvars", "getvar"], prefixes=handler))
 async def all_vars(_, message: Message):
-    await message.reply_text(f"All Variables given below 👇\n\n {Variables_text} \n\n © @mastiwithfriendsx")
+    await message.reply_text(f"All Variables given below 👇\n\n {Variables_text} \n\n © @I_M_FIGHTER")
 
 @Client.on_message(filters.user(Owner) & filters.command(["scrape", "inviteall"], prefixes=handler))
 @Client.on_message(filters.me & filters.command(["scrape", "inviteall"], prefixes=handler))
@@ -126,7 +126,7 @@ async def stats(SpamX: Client, message: Message):
     stats += f"Admin in: `{admingc}` chats \n\n"
     stats += "------------- » «» « ------------- \n"
     stats += f"Time Taken `{ms}secs` \n"
-    stats += "© @mastiwithfriendsx"
+    stats += "© @I_M_FIGHTER"
     await delete_reply(message, tx, stats) 
 
 @Client.on_chat_member_updated(filters.group, group=69)
@@ -144,7 +144,7 @@ async def welcome_watcher(SpamX: Client, member: ChatMemberUpdated):
    user = member.new_chat_member.user if member.new_chat_member else member.from_user    
    if group_welcome:
       if user.id == mai.id:
-         await SpamX.send_message(message.chat.id, "SpamX Here. Powered by @mastiwithfriendsx!")
+         await SpamX.send_message(message.chat.id, "SpamX Here. Powered by @I_M_FIGHTER")
          return
       if user.id == Owner:
          await SpamX.send_message(message.chat.id, f"{user.mention} Welcome to {message.chat.title} my King 👑")
@@ -208,7 +208,7 @@ async def os_system(SpamX: Client, message: Message):
        if check_var in Variables:
           var = check_var
        else:
-          await message.reply_text(f"Wrong variable! All Variables given below 👇\n\n {Variables_text} \n\n © @mastiwithfriendsx")
+          await message.reply_text(f"Wrong variable! All Variables given below 👇\n\n {Variables_text} \n\n © @I_M_FIGHTER")
           return
        value = str(txt[1])
        try:
@@ -218,6 +218,6 @@ async def os_system(SpamX: Client, message: Message):
          os.execl(sys.executable, *args)
          quit()
        except Exception as error:
-         await message.reply_text(f"Error: {error} \n\n Report in @mastiwithfriendsx")
+         await message.reply_text(f"Error: {error} \n\n Report in @I_M_FIGHTER")
     else:
        await message.reply_text(f"**Wrong Usage** \n Syntax: {handler}setvar (var name) (value) \n\n Type `{handler}getvars` To get all Vars name!")
